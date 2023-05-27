@@ -1,20 +1,20 @@
 package com.awsDBdemo.db1Demo.controller;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import com.awsDBdemo.db1Demo.exception.ResourceNotFoundException;
 import com.awsDBdemo.db1Demo.model.Employee;
 import com.awsDBdemo.db1Demo.repository.EmployeeRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/v1")
 public class EmployeeController {
 
-    @Autowired
+    //@Autowired
     EmployeeRepository employeeRepository;
 
     //API endpoint to get all employees
